@@ -17,23 +17,24 @@
 package com.kaurpalang.mirthpluginsample.client;
 
 import com.kaurpalang.mirth.annotationsplugin.annotation.MirthClientClass;
-import com.kaurpalang.mirthpluginsample.client.panel.MainSettingsPanel;
+import com.kaurpalang.mirthpluginsample.client.panel.ChannelTabPanel;
 import com.kaurpalang.mirthpluginsample.shared.MyConstants;
 import com.mirth.connect.client.ui.AbstractSettingsPanel;
-import com.mirth.connect.plugins.SettingsPanelPlugin;
+import com.mirth.connect.plugins.ChannelTabPlugin;
+import com.mirth.connect.client.ui.AbstractChannelTabPanel;
 
 @MirthClientClass
-public class MySettingsPlugin extends SettingsPanelPlugin {
+public class MyChannelTabPlugin extends ChannelTabPlugin {
 
-    private MainSettingsPanel mainSettingsPanel;
+    private ChannelTabPanel channelTabPanel;
 
-    public MySettingsPlugin(String name) {
+    public MyChannelTabPlugin(String name) {
         super(name);
     }
 
     @Override
-    public AbstractSettingsPanel getSettingsPanel() {
-        return this.mainSettingsPanel;
+    public AbstractChannelTabPanel getChannelTabPanel() {
+        return this.channelTabPanel;
     }
 
     @Override
@@ -44,7 +45,7 @@ public class MySettingsPlugin extends SettingsPanelPlugin {
     @Override
     public void start() {
         System.out.println("Hello from the CLIENT MySettingsPlugin.start()");
-        this.mainSettingsPanel = new MainSettingsPanel();
+        this.channelTabPanel = new ChannelTabPanel();
     }
 
     @Override

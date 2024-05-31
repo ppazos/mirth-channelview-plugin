@@ -33,7 +33,7 @@ public class MyServicePlugin implements ServicePlugin {
 
     @Override
     public void init(Properties properties) {
-        System.out.println("Hello world from init!");
+        System.out.println("Hello world from SERVER MyServicePlugin.init()");
     }
 
     @Override
@@ -70,7 +70,7 @@ public class MyServicePlugin implements ServicePlugin {
 
     @Override
     public void start() {
-        System.out.println("Hello world from start!");
+        System.out.println("Hello world from SERVER MyServicePlugin.start()");
     }
 
     @Override

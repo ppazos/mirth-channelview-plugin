@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Copyright 2021 Kaur Palang
-  
+
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -20,8 +20,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.kaurpalang</groupId>
-    <artifactId>mirthpluginsample</artifactId>
+    <groupId>com.cabolabs</groupId>
+    <artifactId>mirthchannelview</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -58,14 +58,14 @@
         <processor.aggregator.path>distribution/aggregated.json</processor.aggregator.path>
 
         <!-- Plugin details -->
-        <plugin.path>plugintest</plugin.path>
-        <plugin.name>Sample testing plugin</plugin.name>
-        <plugin.url>www.com</plugin.url>
-        <plugin.author>Kaur Palang</plugin.author>
+        <plugin.path>channelview</plugin.path>
+        <plugin.name>Channel view plugin</plugin.name>
+        <plugin.url>https://cabolabs.com/our_software</plugin.url>
+        <plugin.author>Pablo Pazos</plugin.author>
         <plugin.description>A sample Mirth plugin to showcase my Maven plugin.</plugin.description>
         <plugin.version>15</plugin.version>
-        <plugin.mirthVersion>4.5.0</plugin.mirthVersion>
-        <plugin.archive.name>sampleplugin</plugin.archive.name>
+        <plugin.mirthVersion>4.4.0,4.5.0</plugin.mirthVersion>
+        <plugin.archive.name>mirth-channel-view</plugin.archive.name>
     </properties>
 
     <repositories>
