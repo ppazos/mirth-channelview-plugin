@@ -6,6 +6,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 
+// test that draws a rectangle in a JPanel
 public class CanvasPanel extends JPanel {
 
    private static final int RECT_X = 20;

@@ -53,5 +53,26 @@
             <artifactId>shared</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+
+
+	  	<dependency>
+	  		<groupId>org.jgrapht</groupId>
+	        <artifactId>jgrapht-core</artifactId>
+	        <version>1.5.2</version>
+	  	</dependency>
+	  	<dependency>
+	  		<groupId>org.jgrapht</groupId>
+	        <artifactId>jgrapht-ext</artifactId>
+	        <version>1.5.2</version>
+	  	</dependency>
+	  	<!--
+	  	<dependency>
+			<groupId>com.mxgraph</groupId>
+		    <artifactId>mxgraph-all</artifactId>
+		    <version>3.9.3</version>
+	  	</dependency>
+	  	-->
+
     </dependencies>
 </project>
